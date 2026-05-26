@@ -5,6 +5,7 @@ This project demonstrates a production-style Terraform setup using **AWS S3 remo
 The goal is to prevent Terraform state corruption, support collaboration, and implement Infrastructure as Code (IaC) best practices.
 
 ---
+**Stack:** Terraform | AWS S3 | Git | GitHub | Infrastructure as Code (IaC) | Remote State Management | State Locking | Versioning | Validation | DevOps
 
 # Architecture
 
