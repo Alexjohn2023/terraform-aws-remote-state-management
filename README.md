@@ -335,4 +335,4 @@ Implemented:
 
 Author: **Alexander Njoku**
 
-GitHub: https://github.com/Alexjohn2023/terraform-aws-infra
+GitHub: https://github.com/Alexjohn2023/terraform-aws-remote-state-management
