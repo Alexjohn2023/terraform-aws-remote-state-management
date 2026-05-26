@@ -1,6 +1,8 @@
 # Terraform AWS Infrastructure
 
-Terraform project implementing AWS infrastructure provisioning with remote state management, locking, validation, and team collaboration best practices.
+Terraform implementation using AWS S3 remote backend, locking, validation, and versioning.
+
+---
 
 ## Architecture
 
@@ -14,46 +16,51 @@ terraform.tfstate
 
 State Locking
 ↓
-Safe Collaboration
+Team Collaboration
 
 Versioning
 ↓
-Recovery & Rollback
+Recovery
 
-Validation
-↓
-Input Guardrails
+---
+
+## Remote State Bucket
+
+### Permissions (public access blocked)
+
+![Permissions](images/bucket-permissions.png)
+
+---
+
+### Versioning enabled
+
+![Versioning](images/bucket-versioning.png)
+
+---
+
+### Remote state folder
+
+![State Folder](images/state-folder.png)
+
+---
+
+### Terraform state object
+
+![State File](images/terraform-state-file.png)
+
+---
+
+### State object details
+
+![Object Details](images/state-object-details.png)
 
 ---
 
 ## Features
 
-- AWS S3 remote backend
-- Remote Terraform state storage
+- Remote state management
+- AWS S3 backend
+- State versioning
 - State locking
-- Bucket versioning
-- Variable validation
-- Terraform outputs
+- Validation
 - Team collaboration workflow
-
----
-
-## Project Structure
-
-terraform-aws-infra/
-│
-├── backend.tf
-├── provider.tf
-├── variables.tf
-├── main.tf
-├── outputs.tf
-└── .gitignore
-
----
-
-## Terraform Workflow
-
-Initialize:
-
-```bash
-terraform init
