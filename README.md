@@ -69,6 +69,42 @@ terraform-aws-infra/
 
 ---
 
+# Tech Stack
+
+### Infrastructure as Code (IaC)
+
+- Terraform
+
+### Cloud Platform
+
+- AWS (Amazon Web Services)
+
+### AWS Services Used
+
+- Amazon S3 (Remote Backend Storage)
+- Amazon S3 Versioning (Recovery and Rollback)
+- State Locking
+
+### Version Control
+
+- Git
+- GitHub
+
+### Development Environment
+
+- VS Code
+- Git Bash
+- Windows
+
+### DevOps Concepts Implemented
+
+- Infrastructure as Code (IaC)
+- Remote State Management
+- State Locking
+- Validation
+- Versioning
+- Team Collaboration
+- 
 # Terraform Remote Backend Configuration
 
 File: `backend.tf`
